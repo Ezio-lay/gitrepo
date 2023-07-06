@@ -4,13 +4,21 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def sort_arr(arr: list):
+    l = len(arr)
+    while l > 1:
+        i = 1
+        while i < l:
+            if arr[i - 1] > arr[i]:
+                arr[i - 1], arr[i] = arr[i], arr[i - 1]
+            i += 1
+        l -= 1
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    a = [6, 1, 4, 3, 2]
+    sort_arr(a)
+    print(a)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
