@@ -3,24 +3,16 @@
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 from demo.module_1 import *
-
-
-def bubble_arr(arr: list):
-    l = len(arr)
-    while l > 1:
-        i = 1
-        while i < l:
-            if arr[i - 1] > arr[i]:
-                arr[i - 1], arr[i] = arr[i], arr[i - 1]
-            i += 1
-        l -= 1
+import random
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    a = [6, 1, 4, 3, 2]
-    count_sort(a)
+    a = []
+    for i in range(10):
+        a.append(random.randint(0, 100))
     print(a)
-    print('End')
-
+    shell_sort(a)
+    print(a == sorted(a))
+    print(a)
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
