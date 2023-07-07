@@ -21,5 +21,6 @@ if __name__ == '__main__':
     a = [6, 1, 4, 3, 2]
     choose_sort(a)
     print(a)
+    print('End')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
