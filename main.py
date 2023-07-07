@@ -19,7 +19,7 @@ def bubble_arr(arr: list):
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     a = [6, 1, 4, 3, 2]
-    quick_sort(a, 0, len(a) - 1)
+    count_sort(a)
     print(a)
     print('End')
 

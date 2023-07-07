@@ -41,3 +41,13 @@ def quick_sort(arr: list, begin, end):
     arr[hole] = key
     quick_sort(arr, begin, left - 1)
     quick_sort(arr, left + 1, end)
+
+
+def count_sort(arr: list):
+    t = [0] * (max(arr) + 1)
+    for x in arr:
+        t[x] += 1
+    arr.clear()
+    for x in range(len(t)):
+        for y in range(t[x]):
+            arr.append(x)
