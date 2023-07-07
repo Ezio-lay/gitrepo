@@ -2,7 +2,7 @@
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-from demo.module_1 import choose_sort
+from demo.module_1 import *
 
 
 def sort_arr(arr: list):
@@ -19,7 +19,7 @@ def sort_arr(arr: list):
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     a = [6, 1, 4, 3, 2]
-    choose_sort(a)
+    insert_sort(a)
     print(a)
     print('End')
 
