@@ -21,3 +21,23 @@ def insert_sort(arr: list):
             else:
                 break
         i += 1
+
+
+def quick_sort(arr: list, begin, end):
+    if begin >= end:
+        return
+    key = arr[begin]
+    left = hole = begin
+    right = end
+    while left < right:
+        while arr[right] > key and left < right:
+            right -= 1
+        arr[hole] = arr[right]
+        hole = right
+        while arr[left] < key and left < right:
+            left += 1
+        arr[hole] = arr[left]
+        hole = left
+    arr[hole] = key
+    quick_sort(arr, begin, left - 1)
+    quick_sort(arr, left + 1, end)

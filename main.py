@@ -5,7 +5,7 @@
 from demo.module_1 import *
 
 
-def sort_arr(arr: list):
+def bubble_arr(arr: list):
     l = len(arr)
     while l > 1:
         i = 1
@@ -19,7 +19,7 @@ def sort_arr(arr: list):
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     a = [6, 1, 4, 3, 2]
-    insert_sort(a)
+    quick_sort(a, 0, len(a) - 1)
     print(a)
     print('End')
 
